@@ -1,0 +1,91 @@
+You are defining the master Specification for a Docusaurus-based book project.
+This document describes the full functional scope, constraints, workflows,
+and expected outputs for producing a complete book.
+
+====================================================
+1. Project Overview
+====================================================
+Project Type: Docusaurus Book
+Output Format: Markdown (.md / .mdx)
+Storage Path: /content/chapters
+Style: Friendly, simple, short paragraphs
+Audience: Beginners (unless user specifies otherwise)
+
+Purpose:
+To generate a complete, high-quality, Docusaurus-compatible book with
+consistent structure, tone  formatting, and navigation.
+
+All outputs must comply with the Constitution.
+
+====================================================
+2. User Inputs the System Must Request
+====================================================
+Before generating the book, the system must request:
+
+- Book title
+- Short book description (1–3 sentences)
+- Target audience
+- Tone (default = friendly & simple)
+- Expected number of chapters (optional)
+- List of main topics or themes (optional)
+
+If any are missing, the system must ask for them.
+
+====================================================
+3. Required Outputs
+====================================================
+The project MUST produce all of the following:
+
+### A. Book Metadata
+- Title
+- Description
+- Audience
+- Tone
+- Version: starting at 1.0.0
+
+### B. Chapter Plan (from /sp.plan)
+Each chapter includes:
+- Chapter number
+- Chapter title
+- Summary (2–3 sentences)
+- Sidebar position
+- Filename (kebab-case)
+- Required frontmatter
+
+### C. Chapter Specifications
+Each chapter must have a detailed per-chapter specification, including:
+- Chapter purpose
+- Target knowledge outcome
+- Section list (H2/H3)
+- Required examples
+- Constraints (short paragraphs, friendly tone)
+- Any special formatting needs
+
+### D. Final Chapters
+Each chapter must be written in correct Markdown structure:
+- H1 title
+- Intro section
+- Clear subsections (H2/H3)
+- Summary section
+- Short paragraphs only
+- Friendly, simple language
+- Valid Docusaurus formatting
+- Accurate and clean content
+
+### E. Final Assembled Book
+A complete set of Markdown files in:
+### 4.1 – Planning Phase
+The system must:
+- Generate a logical table of contents (TOC)
+- Ensure chapters follow a natural progression
+- Keep chapter scopes balanced
+- Ask for confirmation before locking the chapter plan
+
+### 4.2 – Specification Phase
+For each chapter:
+- Generate a chapter spec using the Constitution + Plan
+- Break chapter into clear, small sections
+- Identify learning goals or reader outcomes
+- Specify examples / diagrams if needed
+
+### 4.3 – Writing Phase\nThe writing engine must:\n- Follow the chapter spec exactly\n- Produce short (2–4 sentence) paragraphs\n- Maintain friendly beginner tone\n- Use valid Docusaurus-compatible Markdown\n- Follow the file naming rules\n- Include required frontmatter\n- Avoid unsupported Markdown or exotic syntax\n### 4.4 – Verification Phase\nThe system must check:\n- Markdown validity\n- Frontmatter\n- Short paragraph rule\n- Tone consistency\n- File naming rules\n- Docusaurus compatibility\n\n====================================================\n5. Non-Functional Requirements\n====================================================\n\n### 5.1 – Quality Requirements\n- Informal, friendly, simple tone\n- No jargon unless defined\n- No overly long or complex sections\n- Clear examples where helpful\n- Consistency across chapters\n\n### 5.2 – Structural Requirements\n- H1 title only once per chapter\n- H2/H3 used in hierarchy\n- No unnecessary Markdown features\n- Follow Docusaurus constraints closely\n\n### 5.3 – Ethical Requirements\n- "No AI-generated text without verification" rule\n- No hallucinated facts\n- No plagiarism\n- Factual correctness required\n\n====================================================\n6. Constraints\n====================================================\n- All content must reside in /content/chapters\n- File names must be kebab-case\n- All chapters must include required frontmatter\n- Only Docusaurus-compatible Markdown is allowed\n- Short paragraphs are mandatory\n- Must follow Constitution at all times\n\n====================================================\n7. Success Criteria\n====================================================\nThe book is considered complete when:\n\n- All metadata is defined\n- Full chapter plan is approved\n- A chapter specification exists for each chapter\n- All chapters are written and pass Constitution checks\n- Markdown is valid and Docusaurus-compatible\n- Tone, style, and structure are consistent\n- All chapter files include correct frontmatter\n- Book builds cleanly in Docusaurus with no errors\n\n====================================================\n8. Example Chapter Output Format\n====================================================\n\nExample Chapter File (structure required):\n\n```markdown\n```
