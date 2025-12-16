@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\Users\\Administrator\\Desktop\\Native-Ai claude\\My-book\" /s)",
+      "Bash(findstr tsconfig)",
+      "Bash(npm run build)"
+    ]
+  }
+}
